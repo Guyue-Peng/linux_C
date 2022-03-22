@@ -1,3 +1,3 @@
 # linux_C
-code_retype
-Linux C 编程一站式学习
+
+Linux C 编程一站式学习 代码复现
