@@ -12,35 +12,39 @@ int diamond(int a,char k)
 {
     int i,j,l,p;
     if (a%2==0)
+    {
         printf("error");
-    else
-        for (i=1;i<=a/2+1;i++)
+        return 1;
+    }
+        
+           
+    for (i=1;i<=a/2+1;i++)
         {
             for (j=i;j<=a/2+1;j++)
             {
-                printf("1");
+                 printf(" ");
             } 
             for (l=1;l<=2*i-1;l++)
-            {
-                printf("%c",k);
-            }
-            
-         printf("\n");
-        }
-//-------------------------------------------------------//
-            for (i=1;i<=a/2;i++)
-            {
-                for (j=1;j<=1+i;j++)
                 {
-                    printf("1");
+                  printf("%c",k);
+                }
+            
+            printf("\n");
+            }
+
+    for (i=1;i<=a/2;i++)
+        {
+            for (j=1;j<=1+i;j++)
+                {
+                         printf(" ");
                 
                 }
-                for (p=1;p<=a-(i*2);p++)
+            for (p=1;p<=a-(i*2);p++)
                 {
-                    printf("%c",k);
+                         printf("%c",k);
                 }
-                printf("\n");
-            }
+            printf("\n");
+        }
 
     return 0;
 }
@@ -48,6 +52,7 @@ int diamond(int a,char k)
 
 int main(void)
 {
+
     cout<<"tpying a:"<<endl;
     cin>>a>>k;
     diamond(a,k);
