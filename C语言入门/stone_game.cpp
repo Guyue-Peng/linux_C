@@ -1,5 +1,3 @@
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -27,6 +25,7 @@ int main(void)
             gesture[man], gesture[computer]);
 
         result = (man - computer + 4) % 3 - 1;
+        //全代码中最重要的一段！！
         if (result > 0)
             printf("You win!\n");
         else if (result == 0)
